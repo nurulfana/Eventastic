@@ -13,8 +13,9 @@ This Software Development Project is a platform that acts as a mediator for peop
 9. Admin have the power to control this app through websites (source code at **[Eventastic Admin](https://github.com/luqmaneo/API-Eventastic/tree/main/EventasticAdmin)** )
 
 # Platform
-- Developed using Java.
-- 
+- Mobile app developed using Java.
+- Admin websites developed using HTML, CSS, PHP, and Bootstrap.
+- Database used for this development is MYSQL.
 
 # Collaborator
 - **[NURUL FARHANAH BINTI SALLEHUDDIN](https://github.com/nurulfana)**
