@@ -22,9 +22,8 @@ This Software Development Project is a platform that acts as a mediator for peop
 - **[NARESH NAIDU A/L PERUMAL NAIDU](https://github.com/DeadPool9090)**
 - **[NOR SYUHADAH BINTI ARIFIN](https://github.com/syuhadah99)**
 
-<br>
-## Screens
-<br>
+# UI of this project
+
 <table>
   <tr>
     <td>Splash Screen</td>
