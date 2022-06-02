@@ -27,25 +27,36 @@ This Software Development Project is a platform that acts as a mediator for peop
 <br>
 <table>
   <tr>
-    <td>Login</td>
-     <td>Kariah Homepage</td>
-     <td>Petugas Masjid (Admin) Homepage</td>
+    <td>Splash Screen</td>
+     <td>Login</td>
+     <td>Register</td>
   </tr>
   <tr>
-    <td><img src="https://github.com/marwanbukhori/e_masjid/blob/master/assets/screens/logInpng.png" width=270 height=480></td>
-    <td><img src="https://github.com/marwanbukhori/e_masjid/blob/master/assets/screens/home_screen.png" width=270 height=480></td>
-    <td><img src="https://github.com/marwanbukhori/e_masjid/blob/master/assets/screens/admin_home_screen.png" width=270 height=480></td>
+    <td><img src="https://github.com/luqmaneo/Eventastic/blob/main/asset/splash_screen.png" width=270 height=480></td>
+    <td><img src="https://github.com/luqmaneo/Eventastic/blob/main/asset/login.png" width=270 height=480></td>
+    <td><img src="https://github.com/luqmaneo/Eventastic/blob/main/asset/SignUp.png" width=270 height=480></td>
   </tr>
  </table>
  <table>
   <tr>
-    <td>Tanya Imam</td>
-     <td>Mohon Nikah</td>
-     <td>Tempah Qurban</td>
+    <td>Insert Event Details</td>
+     <td>Main Menu</td>
+     <td>Side Navigation</td>
   </tr>
   <tr>
-    <td><img src="https://github.com/marwanbukhori/e_masjid/blob/master/assets/screens/ask_imam_screen.png" width=270 height=480></td>
-    <td><img src="https://github.com/marwanbukhori/e_masjid/blob/master/assets/screens/apply_nikah.png" width=270 height=480></td>
-    <td><img src="https://github.com/marwanbukhori/e_masjid/blob/master/assets/screens/apply_qurban.png" width=270 height=480></td>
+    <td><img src="https://github.com/luqmaneo/Eventastic/blob/main/asset/InsertEventDetails.png" width=270 height=480></td>
+    <td><img src="https://github.com/luqmaneo/Eventastic/blob/main/asset/main%20menu.png" width=270 height=480></td>
+    <td><img src="https://github.com/luqmaneo/Eventastic/blob/main/asset/side.png" width=270 height=480></td>
+  </tr>
+ </table>
+ 
+ <table>
+  <tr>
+    <td>Venue</td>
+    <td>Dashboard</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/luqmaneo/Eventastic/blob/main/asset/venue.png" width=270 height=480></td>
+    <td><img src="https://github.com/luqmaneo/Eventastic/blob/main/asset/Dashboard.png" width=270 height=480></td>
   </tr>
  </table>
