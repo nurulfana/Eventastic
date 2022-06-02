@@ -10,7 +10,7 @@ This Software Development Project is a platform that acts as a mediator for peop
 6. Advertisement section : user can view a list of dates for Advertisements and Poster/Card planned.
 7. Venue section : user can view a list of Venues and confirmation status.
 8. Dashboard : user can view all task progress in Booking, Guest & Crew and Advertisement. User can check summary information about the event, and keep track with event budget.
-9. Admin have the power to control this app through websites (source code at **[API-Eventastic](https://github.com/luqmaneo/API-Eventastic)** )
+9. Admin have the power to control this app through websites (source code at **[Eventastic Admin](https://github.com/luqmaneo/API-Eventastic/tree/main/EventasticAdmin)** )
 
 # Platform
 - Developed using Java.
