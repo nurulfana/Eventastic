@@ -32,9 +32,9 @@ This Software Development Project is a platform that acts as a mediator for peop
      <td>Register</td>
   </tr>
   <tr>
-    <td><img src="https://github.com/luqmaneo/Eventastic/blob/main/asset/splash_screen.png" width=270 height=480></td>
-    <td><img src="https://github.com/luqmaneo/Eventastic/blob/main/asset/login.png" width=270 height=480></td>
-    <td><img src="https://github.com/luqmaneo/Eventastic/blob/main/asset/SignUp.png" width=270 height=480></td>
+    <td><img src="https://github.com/luqmaneo/Eventastic/blob/main/asset/splash_screen.png" width=439 height=904></td>
+    <td><img src="https://github.com/luqmaneo/Eventastic/blob/main/asset/login.png" width=439 height=904></td>
+    <td><img src="https://github.com/luqmaneo/Eventastic/blob/main/asset/SignUp.png" width=439 height=904></td>
   </tr>
  </table>
  <table>
@@ -44,9 +44,9 @@ This Software Development Project is a platform that acts as a mediator for peop
      <td>Side Navigation</td>
   </tr>
   <tr>
-    <td><img src="https://github.com/luqmaneo/Eventastic/blob/main/asset/InsertEventDetails.png" width=270 height=480></td>
-    <td><img src="https://github.com/luqmaneo/Eventastic/blob/main/asset/main%20menu.png" width=270 height=480></td>
-    <td><img src="https://github.com/luqmaneo/Eventastic/blob/main/asset/side.png" width=270 height=480></td>
+    <td><img src="https://github.com/luqmaneo/Eventastic/blob/main/asset/InsertEventDetails.png" width=439 height=904></td>
+    <td><img src="https://github.com/luqmaneo/Eventastic/blob/main/asset/main%20menu.png" width=439 height=904></td>
+    <td><img src="https://github.com/luqmaneo/Eventastic/blob/main/asset/side.png" width=439 height=904></td>
   </tr>
  </table>
  
@@ -56,7 +56,7 @@ This Software Development Project is a platform that acts as a mediator for peop
     <td>Dashboard</td>
   </tr>
   <tr>
-    <td><img src="https://github.com/luqmaneo/Eventastic/blob/main/asset/venue.png" width=270 height=480></td>
-    <td><img src="https://github.com/luqmaneo/Eventastic/blob/main/asset/Dashboard.png" width=270 height=480></td>
+    <td><img src="https://github.com/luqmaneo/Eventastic/blob/main/asset/venue.png" width=439 height=904></td>
+    <td><img src="https://github.com/luqmaneo/Eventastic/blob/main/asset/Dashboard.png" width=439 height=904></td>
   </tr>
  </table>
