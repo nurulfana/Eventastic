@@ -38,19 +38,18 @@ This Software Development Project is a platform that acts as a mediator for peop
     <td><img src="https://github.com/luqmaneo/Eventastic/blob/main/asset/InsertEventDetails.png" width=220 height=452></td>
   </tr>
  </table>
- <table>
-  <tr>
-    
+  <table>
+  <tr>    
      <td>Main Menu</td>
      <td>Side Navigation</td>
      <td>Venue</td>
      <td>Dashboard</td>
   </tr>
-  <tr>
-    
+  <tr>    
     <td><img src="https://github.com/luqmaneo/Eventastic/blob/main/asset/main%20menu.png" width=220 height=452></td>
     <td><img src="https://github.com/luqmaneo/Eventastic/blob/main/asset/side.png" width=220 height=452></td>
     <td><img src="https://github.com/luqmaneo/Eventastic/blob/main/asset/venue.png" width=220 height=452></td>
     <td><img src="https://github.com/luqmaneo/Eventastic/blob/main/asset/Dashboard.png" width=220 height=452></td>
   </tr>
  </table>
+ 
