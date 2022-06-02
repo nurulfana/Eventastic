@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home"
+            android:icon="@drawable/icon_home"/>
+        <item
+            android:id="@+id/nav_booking"
+            android:title="Booking"
+            android:icon="@drawable/icon_booking"/>
+        <item
+            android:id="@+id/nav_venue"
+            android:title="Venue"
+            android:icon="@drawable/icon_venue"/>
+        <item
+            android:id="@+id/nav_ads"
+            android:title="Advertisement"
+            android:icon="@drawable/icon_ads"/>
+        <item
+            android:id="@+id/nav_gc"
+            android:title="Guest and Crew"
+            android:icon="@drawable/icon_gc"/>
+        <item
+            android:id="@+id/nav_dashboard"
+            android:title="Dashboard"
+            android:icon="@drawable/icon_dashboard"/>
+        <item
+            android:id="@+id/nav_log_out"
+            android:title="Logout"
+            android:icon="@drawable/icon_logout"/>
+    </group>
+
+<!--        <item android:title="Profile">-->
+<!--            <menu>-->
+<!--                <group android:checkableBehavior="single">-->
+
+<!--                    <item-->
+<!--                    android:id="@+id/nav_logout"-->
+<!--                    android:title="Logout"-->
+<!--                    android:icon="@drawable/icon_logout"/>-->
+<!--                    <item-->
+<!--                    android:id="@+id/nav_login"-->
+<!--                    android:title="Logout"-->
+<!--                    android:icon="@drawable/login_icon"/>-->
+<!--                </group>-->
+<!--            </menu>-->
+<!--        </item>-->
+</menu>

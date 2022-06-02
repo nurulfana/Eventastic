@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3FFEB">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:padding="40dp"
+        tools:context=".EGuestCrew.Crew.GuestCrewInsertCrew">
+
+        <TextView
+            android:id="@+id/tv_crewDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/poppinsbold"
+            android:gravity="center"
+            android:text="@string/crew_details"
+            android:textColor="#E91E63"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:targetApi="jelly_bean" />
+
+        <EditText
+            android:id="@+id/et_nameCrew"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+
+            android:background="@drawable/edit_text_shape"
+            android:hint="Name"
+            android:inputType=""
+
+            android:padding="12dp"
+            android:textColorHint="#65E91E63"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_crewDetails" />
+
+        <TextView
+            android:id="@+id/categoryCrew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/white"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="@string/category"
+            android:textColor="#E91E63"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/et_nameCrew"
+            app:layout_constraintTop_toBottomOf="@+id/et_nameCrew" />
+
+        <RadioGroup
+            android:id="@+id/rg_categoryCrew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/categoryCrew"
+            app:layout_constraintTop_toBottomOf="@+id/categoryCrew">
+
+            <RadioButton
+                android:id="@+id/rb_protocolCrew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="@string/protocol" />
+
+            <RadioButton
+                android:id="@+id/rb_mediaPublicityCrew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="@string/media_publicity" />
+
+            <RadioButton
+                android:id="@+id/rb_EntertainmentCrew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="@string/entertainment" />
+
+            <RadioButton
+                android:id="@+id/rb_securityCrew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="@string/security" />
+
+            <RadioButton
+                android:id="@+id/rb_technicalCrew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="@string/technical" />
+
+            <RadioButton
+                android:id="@+id/rb_othersCrew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="@string/others" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/et_quantityCrew"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+
+            android:background="@drawable/edit_text_shape"
+
+            android:hint="@string/quantity"
+            android:inputType="number"
+            android:padding="12dp"
+
+            android:textColorHint="#65E91E63"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rg_categoryCrew" />
+
+        <TextView
+            android:id="@+id/progressCrew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/white"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Confirmation"
+            android:textColor="#E91E63"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/et_quantityCrew"
+            app:layout_constraintTop_toBottomOf="@+id/et_quantityCrew" />
+
+        <RadioGroup
+            android:id="@+id/rg_progressCrew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/progressCrew"
+            app:layout_constraintTop_toBottomOf="@+id/progressCrew">
+
+            <RadioButton
+                android:id="@+id/rb_confirmCrew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsbold"
+                android:text="Yes"
+                android:textColor="@color/colorAccent" />
+
+            <RadioButton
+                android:id="@+id/rb_notConfirmCrew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsbold"
+                android:text="No"
+                android:textColor="#B11E1E" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/contactDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="46dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="@string/contact_details_optional"
+            android:textColor="#E91E63"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/rg_progressCrew"
+            app:layout_constraintTop_toBottomOf="@+id/rg_progressCrew" />
+
+        <EditText
+            android:id="@+id/et_phoneNoGuestCrew"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+
+            android:background="@drawable/edit_text_shape"
+
+            android:hint="@string/phone_number"
+            android:inputType="number"
+            android:padding="12dp"
+
+            android:textColorHint="#65E91E63"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/contactDetails" />
+
+        <EditText
+            android:id="@+id/et_emailGuestCrew"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+
+            android:background="@drawable/edit_text_shape"
+
+            android:hint="@string/email_address"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+
+            android:textColorHint="#65E91E63"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_phoneNoGuestCrew" />
+
+        <EditText
+            android:id="@+id/et_notesGuestCrew"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+
+            android:background="@drawable/edit_text_shape"
+
+            android:hint="@string/note"
+            android:inputType="number"
+            android:padding="12dp"
+
+            android:textColorHint="#65E91E63"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_emailGuestCrew" />
+
+
+        <Button
+            android:id="@+id/btn_saveChangesCrew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/rounded_edittext"
+            android:fontFamily="@font/poppinsbold"
+            android:hapticFeedbackEnabled="true"
+            android:text="Save Changes"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#E91E63"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_notesGuestCrew" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

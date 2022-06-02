@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.loginregister">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LoginRegister"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".HDashboard.CrewDashboard"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity android:name=".HDashboard.GuestDashboard"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".FVenue.VenueActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".AASplashScreen.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ALoginRegister.Login"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".ALoginRegister.SignUp"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".BCreateEvent.InsertEventDetails"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".BCreateEvent.MainActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".CMainMenu.BeverageDetailActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".DBooking.BookingActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".DBooking.AddBookingDetail"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".EGuestCrew.Guest.GuestCrewInsertGuest"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".EGuestCrew.Crew.GuestCrewInsertCrew"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".EGuestCrew.GuestCrew"
+            android:label="@string/title_activity_guest_crew"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".GAds.AdsActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".GAds.AddAdsDetail"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".HDashboard.Dashboard"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

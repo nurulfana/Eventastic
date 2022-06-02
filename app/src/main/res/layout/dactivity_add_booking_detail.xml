@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+
+
+        android:padding="40dp"
+        tools:context=".DBooking.AddBookingDetail">
+
+        <TextView
+            android:id="@+id/tv_bookingDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/poppinsbold"
+            android:gravity="center"
+            android:text="Booking Details"
+            android:textColor="#E91E63"
+
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:targetApi="jelly_bean" />
+
+        <EditText
+            android:id="@+id/et_bookingName"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+
+            android:background="@drawable/edit_text_shape"
+            android:hint="Booking Name"
+            android:inputType=""
+            android:padding="12dp"
+
+            android:textColorHint="#65E91E63"
+            app:layout_constraintTop_toBottomOf="@+id/tv_bookingDetails"
+            tools:layout_editor_absoluteX="40dp" />
+
+        <TextView
+            android:id="@+id/tv_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Category"
+            android:textColor="#E91E63"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/et_bookingName"
+            app:layout_constraintTop_toBottomOf="@+id/et_bookingName" />
+
+        <RadioGroup
+            android:id="@+id/rg_bookingCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+
+            app:layout_constraintStart_toStartOf="@+id/tv_category"
+            app:layout_constraintTop_toBottomOf="@+id/tv_category">
+
+            <RadioButton
+                android:id="@+id/rb_venue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Venue" />
+
+            <RadioButton
+                android:id="@+id/rb_food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Foods Catering" />
+
+            <RadioButton
+                android:id="@+id/rb_entertainment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Entertainments/Performances" />
+
+            <RadioButton
+                android:id="@+id/rb_crewTeams"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Crew Teams" />
+
+            <RadioButton
+                android:id="@+id/rb_transportation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Transportation" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/it_notes"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+
+            android:background="@drawable/edit_text_shape"
+            android:hint="Notes"
+            android:inputType=""
+            android:padding="12dp"
+
+            android:textColorHint="#65E91E63"
+            app:layout_constraintTop_toBottomOf="@+id/rg_bookingCategory"
+            tools:layout_editor_absoluteX="40dp" />
+
+        <EditText
+            android:id="@+id/it_payment"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+
+            android:background="@drawable/edit_text_shape"
+            android:hint="Payment"
+            android:inputType="number"
+            android:padding="12dp"
+
+            android:textColorHint="#65E91E63"
+            app:layout_constraintTop_toBottomOf="@+id/it_notes"
+            tools:layout_editor_absoluteX="40dp" />
+
+        <TextView
+            android:id="@+id/tv_paymentStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Status"
+            android:textColor="#E91E63"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_category"
+            app:layout_constraintTop_toBottomOf="@+id/it_payment" />
+
+        <RadioGroup
+            android:id="@+id/rg_Payment_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+
+            app:layout_constraintStart_toStartOf="@+id/tv_category"
+            app:layout_constraintTop_toBottomOf="@+id/tv_paymentStatus">
+
+            <RadioButton
+                android:id="@+id/rb_paid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsbold"
+                android:text="Paid"
+                android:textColor="#18C11C" />
+
+            <RadioButton
+                android:id="@+id/rb_notPaid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsbold"
+                android:text="Not Paid Yet"
+                android:textColor="#DA0710" />
+
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_contactDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="46dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="@string/contact_details_optional"
+            android:textSize="16sp"
+            android:textColor="#E91E63"
+            app:layout_constraintStart_toStartOf="@+id/tv_category"
+            app:layout_constraintTop_toBottomOf="@+id/rg_Payment_status" />
+
+
+        <EditText
+            android:id="@+id/it_bookingContactPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+
+            android:background="@drawable/edit_text_shape"
+            android:hint="Phone Number"
+            android:inputType="phone"
+
+            android:padding="12dp"
+            android:textColorHint="#65E91E63"
+            app:layout_constraintTop_toBottomOf="@+id/tv_contactDetails"
+            tools:layout_editor_absoluteX="40dp" />
+
+        <EditText
+            android:id="@+id/it_bookingContactEmail"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+
+            android:background="@drawable/edit_text_shape"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+
+            android:padding="12dp"
+            android:textColorHint="#65E91E63"
+            app:layout_constraintTop_toBottomOf="@+id/it_bookingContactPhoneNumber"
+            tools:layout_editor_absoluteX="40dp" />
+
+
+        <Button
+            android:id="@+id/btn_saveChangesGuest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/edit_text_shape"
+            android:fontFamily="@font/poppinsbold"
+            android:hapticFeedbackEnabled="true"
+            android:text="Save Changes"
+            android:textColor="@color/white"
+            app:backgroundTint="#E91E63"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/it_bookingContactEmail" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

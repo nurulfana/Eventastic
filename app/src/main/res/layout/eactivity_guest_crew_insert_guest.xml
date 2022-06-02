@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#F3FFEB">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:padding="40dp"
+    tools:context=".EGuestCrew.Guest.GuestCrewInsertGuest">
+
+    <TextView
+        android:id="@+id/tv_guestDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/poppinsbold"
+        android:gravity="center"
+        android:text="@string/guest_details"
+        android:textColor="#E91E63"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:targetApi="jelly_bean" />
+
+    <EditText
+        android:id="@+id/et_nameGuest"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+
+        android:background="@drawable/edit_text_shape"
+        android:hint="Name"
+
+        android:inputType="text"
+        android:padding="12dp"
+        android:textColorHint="#65E91E63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_guestDetails" />
+
+    <TextView
+        android:id="@+id/tv_genderGuest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="@string/gender"
+        android:textColor="#E91E63"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/et_nameGuest"
+        app:layout_constraintTop_toBottomOf="@+id/et_nameGuest" />
+
+    <RadioGroup
+        android:id="@+id/rg_genderGuest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/tv_genderGuest"
+        app:layout_constraintTop_toBottomOf="@+id/tv_genderGuest">
+
+        <RadioButton
+            android:id="@+id/rb_maleGuest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="@string/male" />
+
+        <RadioButton
+            android:id="@+id/rb_femaleGuest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="@string/female" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_categoryGuest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="@string/category"
+        android:textColor="#E91E63"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/rg_genderGuest"
+        app:layout_constraintTop_toBottomOf="@+id/rg_genderGuest" />
+
+    <RadioGroup
+        android:id="@+id/rg_categoryGuest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/tv_categoryGuest"
+        app:layout_constraintTop_toBottomOf="@+id/tv_categoryGuest">
+
+        <RadioButton
+            android:id="@+id/rb_adultGuest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsbold"
+            android:text="@string/adult"
+            android:textColor="@color/colorAccent"/>
+
+        <RadioButton
+            android:id="@+id/rb_teenGuest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsbold"
+            android:text="@string/teen"
+            android:textColor="#DD5A30"/>
+
+        <RadioButton
+            android:id="@+id/rb_childrenGuest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsbold"
+            android:text="@string/children"
+            android:textColor="#A31818"/>
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/et_quantityGuest"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+
+        android:background="@drawable/edit_text_shape"
+        android:hint="@string/quantity"
+
+        android:inputType="number"
+        android:padding="12dp"
+        android:textColorHint="#65E91E63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg_categoryGuest" />
+
+    <TextView
+        android:id="@+id/tv_progressGuest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Invitation"
+        android:textColor="#E91E63"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/rg_categoryGuest"
+        app:layout_constraintTop_toBottomOf="@+id/et_quantityGuest" />
+
+    <RadioGroup
+        android:id="@+id/rg_progressGuest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/tv_progressGuest"
+        app:layout_constraintTop_toBottomOf="@+id/tv_progressGuest">
+
+        <RadioButton
+            android:id="@+id/rb_invitationSentGuest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Yes"
+            android:textColor="@color/colorAccent" />
+
+        <RadioButton
+            android:id="@+id/rb_invitationNotSentGuest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsbold"
+            android:text="No"
+            android:textColor="#DD5A30" />
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/contactDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="@string/contact_details_optional"
+        android:textColor="#E91E63"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/et_quantityGuest"
+        app:layout_constraintTop_toBottomOf="@+id/rg_progressGuest" />
+
+    <EditText
+        android:id="@+id/et_phoneNoGuestCrew"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+
+        android:background="@drawable/edit_text_shape"
+
+        android:hint="@string/phone_number"
+        android:inputType="number|phone"
+        android:padding="12dp"
+
+        android:textColorHint="#65E91E63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contactDetails" />
+
+    <EditText
+        android:id="@+id/et_emailGuestCrew"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+
+        android:background="@drawable/edit_text_shape"
+
+        android:hint="@string/email_address"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+
+        android:textColorHint="#65E91E63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_phoneNoGuestCrew" />
+
+    <EditText
+        android:id="@+id/et_notesGuestCrew"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+
+        android:background="@drawable/edit_text_shape"
+
+        android:hint="@string/note"
+
+        android:inputType="text"
+        android:padding="12dp"
+        android:textColorHint="#65E91E63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_emailGuestCrew" />
+
+    <Button
+        android:id="@+id/btn_saveChangesGuest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/edit_text_shape"
+        android:fontFamily="@font/poppinsbold"
+        android:hapticFeedbackEnabled="true"
+        android:text="Save Changes"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#E91E63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_notesGuestCrew" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

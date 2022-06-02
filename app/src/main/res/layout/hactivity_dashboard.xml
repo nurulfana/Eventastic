@@ -1,0 +1,754 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".HDashboard.Dashboard">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:id="@+id/Booking"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/aclonica"
+                android:text="Booking Progress"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="0dp"
+                android:layout_height="175dp"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Booking">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/c1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tv_pending_booking"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/aclonica"
+                            android:text="Pending"
+                            android:textColor="#F31638"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/tv_booking_not_paid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="40dp"
+                            android:fontFamily="@font/aclonica"
+                            android:text="0"
+                            android:textColor="#F31638"
+                            android:textSize="45dp" />
+
+                        <TextView
+                            android:id="@+id/view_booking_notpaid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="110dp"
+                            android:layout_marginEnd="10dp"
+                            android:drawableEnd="@drawable/ic_view_dashboard"
+                            android:fontFamily="@font/aclonica"
+                            android:text="View"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:id="@+id/img_booking_pending"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="130dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="50dp"
+                            app:srcCompat="@drawable/icon_booking_coloured" />
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1px"
+                            android:layout_marginTop="105dp"
+                            android:background="@color/black" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/c2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tv_paid_booking"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/aclonica"
+                            android:text="Paid"
+                            android:textColor="#0E9F1D"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/tv_booking_paid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="40dp"
+                            android:fontFamily="@font/aclonica"
+                            android:text="0"
+                            android:textColor="#FF0E9F1D"
+                            android:textSize="45dp" />
+
+                        <TextView
+                            android:id="@+id/view_booking_paid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="110dp"
+                            android:layout_marginEnd="10dp"
+                            android:drawableEnd="@drawable/ic_view_dashboard"
+                            android:fontFamily="@font/aclonica"
+                            android:text="View"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:id="@+id/img_booking_paid"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="130dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="50dp"
+                            app:srcCompat="@drawable/icon_booking_coloured" />
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1px"
+                            android:layout_marginTop="105dp"
+                            android:background="@color/black" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/Guest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/aclonica"
+                android:text="Guest Invitations"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="@+id/Booking"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="0dp"
+                android:layout_height="175dp"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Guest">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/c3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tv_pending_guest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/aclonica"
+                            android:text="Pending"
+                            android:textColor="#F31638"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/tv_crew_confirmed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="40dp"
+                            android:fontFamily="@font/aclonica"
+                            android:text="0"
+                            android:textColor="#F31638"
+                            android:textSize="45dp" />
+
+                        <TextView
+                            android:id="@+id/view_guest_pending"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="110dp"
+                            android:layout_marginEnd="10dp"
+                            android:drawableEnd="@drawable/ic_view_dashboard"
+                            android:fontFamily="@font/aclonica"
+                            android:text="View"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:id="@+id/img_guest_pending"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="130dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="50dp"
+                            app:srcCompat="@drawable/guest_dashboard" />
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1px"
+                            android:layout_marginTop="105dp"
+                            android:background="@color/black" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/c4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tv_paid_guest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/aclonica"
+                            android:text="Sent"
+                            android:textColor="#0E9F1D"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/tv_guest_sent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="40dp"
+                            android:fontFamily="@font/aclonica"
+                            android:text="0"
+                            android:textColor="#0E9F1D"
+                            android:textSize="45dp" />
+
+                        <TextView
+                            android:id="@+id/view_guest_sent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="110dp"
+                            android:layout_marginEnd="10dp"
+                            android:drawableEnd="@drawable/ic_view_dashboard"
+                            android:fontFamily="@font/aclonica"
+                            android:text="View"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:id="@+id/img_guest_paid"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="130dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="50dp"
+                            app:srcCompat="@drawable/guest_dashboard" />
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1px"
+                            android:layout_marginTop="105dp"
+                            android:background="@color/black" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/Crew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/aclonica"
+                android:text="Crew Management"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="@+id/Booking"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="0dp"
+                android:layout_height="175dp"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Crew">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/c5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tv_pending_crew"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/aclonica"
+                            android:text="Pending"
+                            android:textColor="#F31638"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/tv_crew_pending"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="40dp"
+                            android:fontFamily="@font/aclonica"
+                            android:text="0"
+                            android:textColor="#F31638"
+                            android:textSize="45dp" />
+
+                        <TextView
+                            android:id="@+id/view_crew_pending"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="110dp"
+                            android:layout_marginEnd="10dp"
+                            android:drawableEnd="@drawable/ic_view_dashboard"
+                            android:fontFamily="@font/aclonica"
+                            android:text="View"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:id="@+id/img_crew_pending"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="130dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="50dp"
+                            app:srcCompat="@drawable/icon_gc_coloured" />
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1px"
+                            android:layout_marginTop="105dp"
+                            android:background="@color/black" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/c6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tv_paid_crew"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/aclonica"
+                            android:text="Confirm"
+                            android:textColor="#0E9F1D"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/tv_crew_confirm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="40dp"
+                            android:fontFamily="@font/aclonica"
+                            android:text="0"
+                            android:textColor="#0E9F1D"
+                            android:textSize="45dp" />
+
+                        <TextView
+                            android:id="@+id/view_crew_sent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="110dp"
+                            android:layout_marginEnd="10dp"
+                            android:drawableEnd="@drawable/ic_view_dashboard"
+                            android:fontFamily="@font/aclonica"
+                            android:text="View"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:id="@+id/img_crew_paid"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="130dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="50dp"
+                            app:srcCompat="@drawable/icon_gc_coloured" />
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1px"
+                            android:layout_marginTop="105dp"
+                            android:background="@color/black" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/Ads"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/aclonica"
+                android:text="Advertisement Progress"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="@+id/Crew"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="0dp"
+                android:layout_height="175dp"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Ads">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/c7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tv_pending_ads"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/aclonica"
+                            android:text="Pending"
+                            android:textColor="#F31638"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/tv_ads_confirmed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="40dp"
+                            android:fontFamily="@font/aclonica"
+                            android:text="0"
+                            android:textColor="#F31638"
+                            android:textSize="45dp" />
+
+                        <TextView
+                            android:id="@+id/view_ads_pending"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="110dp"
+                            android:layout_marginEnd="10dp"
+                            android:drawableEnd="@drawable/ic_view_dashboard"
+                            android:fontFamily="@font/aclonica"
+                            android:text="View"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:id="@+id/img_ads_pending"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="130dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="50dp"
+                            app:srcCompat="@drawable/icon_ads_coloured" />
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1px"
+                            android:layout_marginTop="105dp"
+                            android:background="@color/black" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/c8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tv_paid_ads"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/aclonica"
+                            android:text="Completed"
+                            android:textColor="#0E9F1D"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/tv_ads_unconfirmed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="40dp"
+                            android:fontFamily="@font/aclonica"
+                            android:text="0"
+                            android:textColor="#0E9F1D"
+                            android:textSize="45dp" />
+
+                        <TextView
+                            android:id="@+id/view_ads_confirmed"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="110dp"
+                            android:layout_marginEnd="10dp"
+                            android:drawableEnd="@drawable/ic_view_dashboard"
+                            android:fontFamily="@font/aclonica"
+                            android:text="View"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:id="@+id/img_ads_paid"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="130dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="50dp"
+                            app:srcCompat="@drawable/icon_ads_coloured" />
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1px"
+                            android:layout_marginTop="105dp"
+                            android:background="@color/black" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_Budget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/aclonica"
+                android:text="Event Budget"
+                android:textColor="#3F51B5"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+            <LinearLayout
+                android:id="@+id/Budget"
+                android:layout_width="0dp"
+                android:layout_height="175dp"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_Budget">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/c9"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tv_pending_venue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/aclonica"
+                            android:text="Spent"
+                            android:textColor="#F31638"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/view_budget_spent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="40dp"
+                            android:fontFamily="@font/aclonica"
+                            android:text="0"
+                            android:textColor="#F31638"
+                            android:textSize="30dp" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/c10"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tv_paid_venue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/aclonica"
+                            android:text="Balanced"
+                            android:textColor="#0E9F1D"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/view_budget_balanced"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="40dp"
+                            android:fontFamily="@font/aclonica"
+                            android:text="0"
+                            android:textColor="#0E9F1D"
+                            android:textSize="30dp" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.drawerlayout.widget.DrawerLayout>
