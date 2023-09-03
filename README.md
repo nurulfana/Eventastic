@@ -18,7 +18,7 @@ This Software Development Project is a platform that acts as a mediator for peop
 - Database used for this development is MYSQL.
 
 # Collaborator
-- **[NURUL FARHANAH BINTI SALLEHUDDIN](https://github.com/nurulfana)**
+- **[NIK MUHAMMAD LUQMAN HAKIM BIN MOHD ROZAKI](https://github.com/LuqmanMohd)**
 - **[NARESH NAIDU A/L PERUMAL NAIDU](https://github.com/DeadPool9090)**
 - **[NOR SYUHADAH BINTI ARIFIN](https://github.com/syuhadah99)**
 
